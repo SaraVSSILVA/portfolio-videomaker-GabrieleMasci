@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Entre em contato com Stephanie Aveldano, Videomaker ítalo-brasileira."
+    />
+    <meta name="author" content="Stephanie Aveldano" />
+    <meta
+      name="keywords"
+      content="Contato, Stephanie Aveldano, Videomaker, Portfólio, Vídeo, Arte"
+    />
+    <title data-translate-key="navContato">Contato | Stephanie Aveldano</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Abrir menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul id="navbarMenu">
+        <li><a href="index.html" data-translate-key="navHome">Home</a></li>
+        <li><a href="index.html#sobre" data-translate-key="navSobre">Sobre</a></li>
+        <li><a href="index.html#portfolio" data-translate-key="navPortfolio">Portfólio</a></li>
+        <li><a href="index.html#venda" data-translate-key="navVenda">Conteúdos à Venda</a></li>
+        <li><a href="contato.html" data-translate-key="navContato">Contato</a></li>
+      </ul>
+      <button id="langToggle" style="margin-left:auto;"><i class="fas fa-globe"></i> PT/IT</button>
+    </nav>
+
+    <main>
+      <section id="contact" class="section-padded">
+        <div class="container">
+          <h2 data-translate-key="contatoTitulo">Fale Comigo</h2>
+          <p class="section-description" data-translate-key="contatoDescricao">
+            Se você tem um projeto em mente, gostaria de colaborar ou apenas
+            quer trocar uma ideia sobre vídeo e arte, sinta-se à vontade para
+            entrar em contato.
+          </p>
+
+          <div class="contact-grid">
+            <div class="contact-form-wrapper">
+              <h3 data-translate-key="formTitulo">Envie-me uma Mensagem</h3>
+              <form action="#" method="POST" class="contact-form">
+                <div class="form-group">
+                  <label for="name" data-translate-key="labelNome">Nome Completo</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    data-translate-placeholder="placeholderNome"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="email" data-translate-key="labelEmail">Seu Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    data-translate-placeholder="placeholderEmail"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="subject" data-translate-key="labelAssunto">Assunto</label>
+                  <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    data-translate-placeholder="placeholderAssunto"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="message" data-translate-key="labelMensagem">Mensagem</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="6"
+                    data-translate-placeholder="placeholderMensagem"
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn-primary" data-translate-key="btnEnviar">
+                  Enviar Mensagem
+                </button>
+              </form>
+            </div>
+
+            <div class="contact-info-wrapper">
+              <h3 data-translate-key="contatoInfoTitulo">Outras Formas de Contato</h3>
+              <div class="info-item">
+                <p>
+                  <strong data-translate-key="infoEmail">Email:</strong> stephanie.aveldano@email.com
+                </p>
+              </div>
+              <div class="info-item">
+                <p>
+                  <strong data-translate-key="infoInstagram">Instagram:</strong>
+                  <a
+                    href="https://instagram.com/stephanieaveldano"
+                    target="_blank"
+                    >@stephanieaveldano</a
+                  >
+                </p>
+              </div>
+              <div class="info-item">
+                <p>
+                  <strong data-translate-key="infoWhatsApp">WhatsApp:</strong>
+                  <a href="https://wa.me/SEUNUMERO" target="_blank" data-translate-key="linkFaleDireto"
+                    >Fale direto</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <section id="social-media-links">
+          <a
+            href="https://instagram.com/stephanieaveldano"
+            target="_blank"
+            aria-label="Instagram de Stephanie Aveldano"
+          >
+            <i
+              class="fab fa-instagram"
+              style="font-size: 2rem; color: #e1306c"
+            ></i>
+          </a>
+          <a
+            href="https://wa.me/SEUNUMERO"
+            target="_blank"
+            aria-label="WhatsApp de Stephanie Aveldano"
+          >
+            <i
+              class="fab fa-whatsapp"
+              style="font-size: 2rem; color: #25d366"
+            ></i>
+          </a>
+        </section>
+        <p class="copyright" data-translate-key="copyright">Feito com 🧡 por Stephanie Aveldano - 2025</p>
+        <a href="#main-header" class="back-to-top" data-translate-key="voltarTopo">⬆️ Voltar ao topo</a>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

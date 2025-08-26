@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-translate-key="homeTitle">SEU NOME | Videomaker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Abrir menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul id="navbarMenu">
+        <li><a href="#home" data-translate-key="navHome">Home</a></li>
+        <li><a href="#sobre" data-translate-key="navSobre">Sobre</a></li>
+        <li><a href="#portfolio" data-translate-key="navPortfolio">Portfólio</a></li>
+        <li><a href="#venda" data-translate-key="navVenda">Conteúdos à Venda</a></li>
+        <li><a href="contato.html" data-translate-key="navContato">Contato</a></li>
+      </ul>
+      <button id="langToggle" style="margin-left:auto;"><i class="fas fa-globe"></i> PT/IT</button>
+    </nav>
+
+    <section id="home">
+      <h1 data-translate-key="homeTitle">Bem-vindo ao universo de Seu Nome</h1>
+      <p data-translate-key="homeSubtitle">Videomaker e artista visual</p>
+    </section>
+
+    <section id="sobre">
+      <h2 data-translate-key="sobreTitulo">Sobre</h2>
+      <p id="sobreTexto" data-translate-key="sobreTexto">[Texto sobre a artista]</p>
+    </section>
+
+    <section id="portfolio">
+      <h2 data-translate-key="portfolioTitulo">Portfólio</h2>
+      <div class="gallery" id="fotoGaleria">
+        <a
+          href="assets/img/foto1.jpg"
+          data-lightbox="portfolio"
+          data-title="Foto 1"
+        >
+          <img src="assets/img/thumb1.jpg" alt="Foto 1" />
+        </a>
+        <a
+          href="assets/img/foto2.jpg"
+          data-lightbox="portfolio"
+          data-title="Foto 2"
+        >
+          <img src="assets/img/thumb2.jpg" alt="Foto 2" />
+        </a>
+        </div>
+
+      <div class="video-list" id="videoGaleria">
+        <div class="video-item">
+          <iframe
+            src="https://www.youtube.com/embed/ID_DO_VIDEO1"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+          <p>Vídeo 1 — Making of de curta experimental</p>
+        </div>
+        <div class="video-item">
+          <iframe
+            src="https://www.youtube.com/embed/ID_DO_VIDEO2"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+          <p>Vídeo 2 — Documentário sobre luz natural</p>
+        </div>
+        </div>
+    </section>
+
+    <section id="venda">
+      <h2 data-translate-key="vendaTitulo">Conteúdos à Venda</h2>
+      <div id="vendaVideos"></div>
+    </section>
+
+
+    <footer>
+      <div class="footer-contato">
+        <a href="https://wa.me/SEUNUMERO" target="_blank" aria-label="WhatsApp">
+          <i class="fab fa-whatsapp" style="font-size:2rem;color:#25d366;"></i>
+        </a>
+        <a href="mailto:SEUEMAIL" aria-label="E-mail">
+          <i class="fas fa-envelope" style="font-size:2rem;color:#c19a6b;"></i>
+        </a>
+        <a href="https://instagram.com/SEUINSTAGRAM" target="_blank" aria-label="Instagram">
+          <i class="fab fa-instagram" style="font-size:2rem;color:#e1306c;"></i>
+        </a>
+      </div>
+      <p data-translate-key="copyright">&copy; 2025 Seu nome</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+{
+  "homeTitle": "Benvenuti nell'universo di Stephanie Aveldano",
+  "homeSubtitle": "Videomaker e artista visiva",
+  "sobreTitulo": "Chi Sono",
+  "sobreTexto": "Stephanie Aveldano è una videomaker italo-brasiliana appassionata di narrazioni visive che catturano l’essenza umana. Il suo lavoro oscilla tra il documentario e l’esperimentale, con una forte influenza dell’estetica mediterranea.",
+  "portfolioTitulo": "Portfolio",
+  "vendaTitulo": "Contenuti in Vendita",
+  "contatoTitulo": "Contatti",
+  "contatoLinks": {
+    "whatsapp": "WhatsApp",
+    "email": "Email",
+    "instagram": "Instagram"
+  },
+  "currency": "EUR",
+  "prices": [143.86, 170.83, 215.78, 197.24, 175.64],
+  "navbar": {
+  "home": "Home",
+  "sobre": "Chi Sono",
+  "portfolio": "Portfolio",
+  "venda": "Contenuti in Vendita",
+  "contato": "Contatti"
+}
+}
+
