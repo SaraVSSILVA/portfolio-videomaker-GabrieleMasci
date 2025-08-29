@@ -282,9 +282,9 @@ footer {
 }
 
 body {
-  font-family: 'Lato', sans-serif;
-  background-color: #0f0f0f;
-  color: #f5f5f5;
+  font-family: 'Gotham', 'Montserrat', Arial, sans-serif;
+  background-color: #101820;
+  color: #faf9f6;
   line-height: 1.6;
 }
 
@@ -390,10 +390,10 @@ section {
 }
 
 section h2 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Gotham', 'Montserrat', Arial, sans-serif;
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: #c19a6b;
+  color: #2DD4BF;
 }
 
 /* Home */
@@ -467,26 +467,49 @@ section h2 {
   color: #ccc;
 }
 
-/* Conteúdos à venda */
-#vendaVideos {
+/* Serviços */
+#servicosLista {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
 }
 
-#vendaVideos .item {
+.servico-item {
   background-color: #1a1a1a;
   padding: 1rem;
   border-radius: 8px;
   border: 1px solid #333;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
-#vendaVideos .item h3 {
-  color: #e63946;
+.servico-item h3 {
+  color: #c19a6b;
+  margin-bottom: 0.5rem;
 }
 
-#vendaVideos .item p {
-  margin: 0.5rem 0;
+.servico-item p {
+  margin-bottom: 1rem;
+  color: #ccc;
+}
+
+.add-carrinho {
+  background: #2DD4BF;
+  color: #101820;
+  border: none;
+  border-radius: 6px;
+  padding: 0.6rem 1.2rem;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: not-allowed;
+  opacity: 0.7;
+  transition: background 0.3s;
+}
+.add-carrinho[disabled] {
+  background: #2DD4BF;
+  color: #fff;
+  cursor: not-allowed;
 }
 
 /* Contato */
@@ -500,7 +523,7 @@ section h2 {
 }
 
 #contato a {
-  color: #c19a6b;
+  color: #30d878;
   text-decoration: none;
 }
 
@@ -510,11 +533,11 @@ section h2 {
 
 /* Footer */
 footer {
-  background-color: #111;
+  background-color: #101820;
   text-align: center;
   padding: 2rem;
   font-size: 0.9rem;
-  color: #777;
+  color: #faf9f6;
   margin-top: 4rem;
 }
 
