@@ -18,7 +18,8 @@ function aplicarTraducoes() {
   const langToggleBtn = document.getElementById('langToggle');
   if (langToggleBtn) {
     const btnText = idiomaAtual === 'pt' ? 'PT/IT' : 'IT/PT';
-    langToggleBtn.textContent = btnText;
+    const span = langToggleBtn.querySelector('span[data-translate-key="langBtn"]');
+    if (span) span.textContent = btnText;
   }
   console.log('Idioma aplicado:', idiomaAtual);
 }
@@ -44,7 +45,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     // Inicializa o texto do botão corretamente
     const btnText = idiomaAtual === 'pt' ? 'PT/IT' : 'IT/PT';
-    langToggleBtn.textContent = btnText;
+    const span = langToggleBtn.querySelector('span[data-translate-key="langBtn"]');
+    if (span) span.textContent = btnText;
   }
   carregarTraducoes(idiomaAtual);
 

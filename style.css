@@ -1,3 +1,27 @@
+body {
+  background: #111;
+}
+
+/* Exclui hero, navbar e footer se eles tiverem fundo fixo */
+.hero,
+.main-nav,
+.site-footer {
+  position: relative;
+  z-index: 1;
+  background: none;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 .site-footer {
   background: #181818;
   color: #e7c27d;
@@ -282,7 +306,6 @@
   outline: 2px solid #e7c27d;
 }
 
-
 .contact-info-wrapper h3 {
   color: #e7c27d;
   margin-bottom: 1rem;
@@ -314,7 +337,7 @@
   font-size: 1.2rem;
   font-weight: bold;
   color: #fff;
-  background: linear-gradient(90deg, #e7c27d 0%, #c19a6b 100%);
+  background: linear-gradient(90deg, #ffe055 0%, #e6a122 50%, #1abc9c 100%);
   border: none;
   border-radius: 30px;
   box-shadow: 0 4px 24px rgba(231, 194, 125, 0.18);
@@ -332,7 +355,6 @@
 body {
   margin: 0;
   font-family: 'Montserrat', 'Lora', Arial, sans-serif;
-  background: #111;
   color: #f5f5f5;
   line-height: 1.6;
 }
@@ -390,7 +412,7 @@ body {
 }
 
 .hero {
-  background: url('assets/img/background.jpg') center/cover no-repeat;
+  background: none;
   position: relative;
   overflow: hidden;
   min-height: 70vh;
@@ -407,14 +429,26 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(20, 20, 20, 0.65);
-  backdrop-filter: blur(2px);
+  background: url('assets/background.jpg') center center/cover no-repeat;
+  filter: blur(2px) brightness(0.6);
   z-index: 1;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 140px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #f5f5f541 100%);
+  pointer-events: none;
 }
 
 .hero-content {
   position: relative;
   z-index: 2;
+  color: #fff;
 }
 
 .hero-content h1 {
@@ -577,7 +611,6 @@ body {
   font-size: 1rem;
 }
 
-
 @media (max-width: 800px) {
   .sobre-flex {
     flex-direction: column;
@@ -598,4 +631,16 @@ body {
   .portfolio-grid {
     grid-template-columns: 1fr;
   }
+}
+
+.langToggle {
+  color: #e7c27d;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+}
+.langToggle i {
+  font-size: 1.1rem;
 }
