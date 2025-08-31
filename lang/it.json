@@ -11,8 +11,6 @@
   "servicosTitulo": "Servizi",
   "servicoVideoTitulo": "Produzione Video",
   "servicoVideoTexto": "Contenuti dinamici e tradizionali per marchi, viaggi e immobili.",
-  "servicoDroneTitulo": "Operazione Droni",
-  "servicoDroneTexto": "Immagini aeree certificate per progetti innovativi.",
   "servicoEsporteTitulo": "Settore Sportivo",
   "servicoEsporteTexto": "Esperienza in trasmissioni e produzioni televisive.",
   "navHome": "Home",
@@ -48,8 +46,15 @@
   "portfolioCard3Contrib": "Contributo: Montaggio del video completo",
   "portfolioCard4Title": "Praia Vermelha",
   "portfolioCard4Location": "Paraty - FPV 4K Drone",
-  "portfolioCard5Title": "Jundiaí - Pedra da Baleia",
+  "portfolioCard5Title": "Jundiaí - Roccia della Balena",
   "portfolioCard5Location": "FPV 4K Drone",
-  "portfolioCard6Title": "Paraty - Historic Canals",
-  "portfolioCard6Location": "FPV 4K Drone"
+  "portfolioCard6Title": "Paraty - Canali Storici",
+  "portfolioCard6Location": "FPV 4K Drone",
+  "servicoCameraTitulo": "Riprese con Telecamera",
+  "servicoCameraTexto": "Riprese professionali per eventi, marchi e progetti speciali.",
+  "servicoDroneTitulo": "Riprese con Drone",
+  "servicoDroneTexto": "Immagini aeree innovative, inclusi FPV, per video unici e d’impatto.",
+  "servicoEdicaoTitulo": "Montaggio Video",
+  "servicoEdicaoTexto": "Montaggio, post-produzione e creazione di video dinamici per tutte le piattaforme.",
+  "servicoBtnOrcamento": "Richiedi Preventivo"
 }
