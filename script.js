@@ -36,6 +36,10 @@ async function carregarTraducoes(idioma) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+  // Listeners passive para rolagem/touch
+  window.addEventListener('scroll', function() {}, { passive: true });
+  window.addEventListener('touchstart', function() {}, { passive: true });
+  window.addEventListener('touchmove', function() {}, { passive: true });
   // Tradução
   const langToggleBtn = document.getElementById('langToggle');
   if (langToggleBtn) {
