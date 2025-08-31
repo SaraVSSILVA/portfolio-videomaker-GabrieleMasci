@@ -3,7 +3,11 @@ body {
 }
 
 /* Exclui hero, navbar e footer se eles tiverem fundo fixo */
-.hero,
+.hero {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
 .main-nav,
 .site-footer {
   position: relative;
