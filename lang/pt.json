@@ -3,12 +3,7 @@
   "homeSubtitle": "A vida em movimento, contada em frames",
   "btnPortfolio": "Ver Portfólio",
   "sobreTitulo": "Sobre Gabriele",
-  "sobreTexto": "Olá! Sou Gabriele, videomaker e operador EVS com sólida experiência no setor televisivo. Italiano de origem e apaixonado por viagens e esportes, divido meu tempo entre Itália e Brasil, criando conteúdos diversos que refletem essa mistura cultural.
-Ao longo de mais de 7 anos de carreira, iniciei como videomaker e evoluí para operador EVS, atuando em emissoras de televisão e colaborando com grandes nomes como AC Milan e DAZN.
-Sou também operador certificado de drones, especializado em FPV. Essa técnica me permite capturar imagens aéreas únicas — desde panorâmicas clássicas até tomadas complexas e precisas, tanto em ambientes internos quanto externos.
-Produzo vídeos com padrão profissional, incluindo formatos dinâmicos para redes sociais, sempre adaptados às necessidades e estilo de cada cliente.
-Se você tem uma ideia, estou pronto para transformá-la em imagem. Vamos criar algo incrível juntos!
-",
+  "sobreTexto": "Olá! Sou Gabriele, videomaker e operador EVS com sólida experiência no setor televisivo. Italiano de origem e apaixonado por viagens e esportes, divido meu tempo entre Itália e Brasil, criando conteúdos diversos que refletem essa mistura cultural. Ao longo de mais de 7 anos de carreira, iniciei como videomaker e evoluí para operador EVS, atuando em emissoras de televisão e colaborando com grandes nomes como AC Milan e DAZN. Sou também operador certificado de drones, especializado em FPV. Essa técnica me permite capturar imagens aéreas únicas — desde panorâmicas clássicas até tomadas complexas e precisas, tanto em ambientes internos quanto externos. Produzo vídeos com padrão profissional, incluindo formatos dinâmicos para redes sociais, sempre adaptados às necessidades e estilo de cada cliente. Se você tem uma ideia, estou pronto para transformá-la em imagem. Vamos criar algo incrível juntos!",
   "portfolioTitulo": "Portfólio",
   "portfolioCard1": "Vídeo 1",
   "portfolioCard2": "Vídeo 2",
@@ -41,5 +36,20 @@ Se você tem uma ideia, estou pronto para transformá-la em imagem. Vamos criar 
   "contatoInfoTitulo": "Outras Formas de Contato",
   "infoEmail": "Email:",
   "infoInstagram": "Instagram:",
-  "copyright": "© 2025 Gabriele Masci. Todos os direitos reservados."
+  "copyright": "© 2025 Gabriele Masci. Todos os direitos reservados.",
+  "portfolioCard1Title": "Juventus x Manchester City",
+  "portfolioCard1Location": "Copa do Mundo de Clubes",
+  "portfolioCard1Contrib": "Contribuição: Edição do highlight da partida",
+  "portfolioCard2Title": "Renovação de contrato Tijjani Reijnders",
+  "portfolioCard2Location": "Milan TV",
+  "portfolioCard2Contrib": "Contribuição: Edição do vídeo completo",
+  "portfolioCard3Title": "Vitória Supercopa contra o Inter",
+  "portfolioCard3Location": "Milan TV",
+  "portfolioCard3Contrib": "Contribuição: Edição do vídeo completo",
+  "portfolioCard4Title": "Praia Vermelha",
+  "portfolioCard4Location": "Paraty - FPV 4K Drone",
+  "portfolioCard5Title": "Jundiaí - Pedra da Baleia",
+  "portfolioCard5Location": "FPV 4K Drone",
+  "portfolioCard6Title": "Paraty - Historic Canals",
+  "portfolioCard6Location": "FPV 4K Drone"
 }

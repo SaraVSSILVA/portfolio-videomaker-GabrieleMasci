@@ -1,3 +1,10 @@
+<!-- Exemplo de cards traduzíveis, adicione onde houver cards de portfólio -->
+<!--
+  <span class="portfolio-title" data-translate-key="portfolioCard1Title">Juventus x Manchester City</span>
+  <span class="portfolio-location" data-translate-key="portfolioCard1Location">Copa do Mundo de Clubes</span>
+  <span class="portfolio-contrib" data-translate-key="portfolioCard1Contrib">Contribuição: Edição do highlight da partida</span>
+  ...
+  -->
 <!doctype html>
 <html lang="pt-br">
   <head>
@@ -5,19 +12,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title data-translate-key="navContato">Contato | Gabriele Masci</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
   </head>
   <body>
     <nav class="main-nav">
-      <div class="logo"><a href="index.html" data-translate-key="homeTitle">Gabriele Masci</a></div>
+      <div class="logo">
+        <a href="index.html" data-translate-key="homeTitle">Gabriele Masci</a>
+      </div>
       <ul>
         <li><a href="index.html" data-translate-key="navHome">Home</a></li>
-        <li><a href="index.html#sobre" data-translate-key="navSobre">Sobre</a></li>
-        <li><a href="index.html#portfolio" data-translate-key="navPortfolio">Portfólio</a></li>
-        <li><a href="index.html#servicos" data-translate-key="navServicos">Serviços</a></li>
-        <li><a href="contato.html" data-translate-key="navContato">Contato</a></li>
+        <li>
+          <a href="index.html#sobre" data-translate-key="navSobre">Sobre</a>
+        </li>
+        <li>
+          <a href="index.html#portfolio" data-translate-key="navPortfolio"
+            >Portfólio</a
+          >
+        </li>
+        <li>
+          <a href="index.html#servicos" data-translate-key="navServicos"
+            >Serviços</a
+          >
+        </li>
+        <li>
+          <a href="contato.html" data-translate-key="navContato">Contato</a>
+        </li>
       </ul>
-      <button id="langToggle"><i class="fas fa-globe"></i> <span data-translate-key="langBtn">PT/IT</span></button>
+      <button id="langToggle">
+        <i class="fas fa-globe"></i>
+        <span data-translate-key="langBtn">PT/IT</span>
+      </button>
     </nav>
 
     <main>
@@ -25,7 +52,9 @@
         <div class="container">
           <h2 data-translate-key="contatoTitulo">Fale Comigo</h2>
           <p class="section-description" data-translate-key="contatoDescricao">
-            Se você tem um projeto em mente, gostaria de colaborar ou apenas quer trocar uma ideia sobre vídeo e arte, sinta-se à vontade para entrar em contato.
+            Se você tem um projeto em mente, gostaria de colaborar ou apenas
+            quer trocar uma ideia sobre vídeo e arte, sinta-se à vontade para
+            entrar em contato.
           </p>
 
           <div class="contact-grid">
@@ -33,27 +62,67 @@
               <h3 data-translate-key="formTitulo">Envie-me uma Mensagem</h3>
               <form action="#" method="POST" class="contact-form">
                 <div class="form-group">
-                  <label for="name" data-translate-key="labelNome">Nome Completo</label>
-                  <input type="text" id="name" name="name" data-translate-placeholder="placeholderNome" required />
+                  <label for="name" data-translate-key="labelNome"
+                    >Nome Completo</label
+                  >
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    data-translate-placeholder="placeholderNome"
+                    required
+                  />
                 </div>
                 <div class="form-group">
-                  <label for="email" data-translate-key="labelEmail">Seu Email</label>
-                  <input type="email" id="email" name="email" data-translate-placeholder="placeholderEmail" required />
+                  <label for="email" data-translate-key="labelEmail"
+                    >Seu Email</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    data-translate-placeholder="placeholderEmail"
+                    required
+                  />
                 </div>
                 <div class="form-group">
-                  <label for="subject" data-translate-key="labelAssunto">Assunto</label>
-                  <input type="text" id="subject" name="subject" data-translate-placeholder="placeholderAssunto" required />
+                  <label for="subject" data-translate-key="labelAssunto"
+                    >Assunto</label
+                  >
+                  <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    data-translate-placeholder="placeholderAssunto"
+                    required
+                  />
                 </div>
                 <div class="form-group">
-                  <label for="message" data-translate-key="labelMensagem">Mensagem</label>
-                  <textarea id="message" name="message" rows="6" data-translate-placeholder="placeholderMensagem" required></textarea>
+                  <label for="message" data-translate-key="labelMensagem"
+                    >Mensagem</label
+                  >
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="6"
+                    data-translate-placeholder="placeholderMensagem"
+                    required
+                  ></textarea>
                 </div>
-                <button type="submit" class="btn-hero" data-translate-key="btnEnviar">Enviar Mensagem</button>
+                <button
+                  type="submit"
+                  class="btn-hero"
+                  data-translate-key="btnEnviar"
+                >
+                  Enviar Mensagem
+                </button>
               </form>
             </div>
 
             <div class="contact-info-wrapper">
-              <h3 data-translate-key="contatoInfoTitulo">Outras Formas de Contato</h3>
+              <h3 data-translate-key="contatoInfoTitulo">
+                Outras Formas de Contato
+              </h3>
               <div class="info-item">
                 <p>
                   <strong data-translate-key="infoEmail">Email:</strong>
@@ -63,7 +132,11 @@
               <div class="info-item">
                 <p>
                   <strong data-translate-key="infoInstagram">Instagram:</strong>
-                  <a href="https://www.instagram.com/gabrielemasci_fpv?igsh=ODduNzJzODJsdXNr&utm_source=qr" target="_blank">@gabrielemasci_fpv</a>
+                  <a
+                    href="https://www.instagram.com/gabrielemasci_fpv?igsh=ODduNzJzODJsdXNr&utm_source=qr"
+                    target="_blank"
+                    >@gabrielemasci_fpv</a
+                  >
                 </p>
               </div>
             </div>
@@ -72,16 +145,45 @@
       </section>
     </main>
 
-    <footer>
-      <div class="footer-contato">
-        <a href="mailto:gabrielemasci@hotmail.com" aria-label="E-mail">
-          <i class="fas fa-envelope" style="font-size: 2rem; color: #e7c27d"></i>
-        </a>
-        <a href="https://www.instagram.com/gabrielemasci_fpv?igsh=ODduNzJzODJsdXNr&utm_source=qr" target="_blank" aria-label="Instagram">
-          <i class="fab fa-instagram" style="font-size: 2rem; color: #e7c27d"></i>
-        </a>
+    <div class="footer-divider"></div>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-main">
+          <div class="footer-brand">
+            <h2 class="footer-title">Gabriele Masci</h2>
+            <span class="footer-tagline"
+              >Tra il dire e il fare c’è di mezzo il mare</span
+            >
+          </div>
+          <div class="footer-contact">
+            <a href="mailto:gabrielemasci@hotmail.com" class="footer-email">
+              <i class="fas fa-envelope"></i> gabrielemasci@hotmail.com
+            </a>
+          </div>
+          <div class="footer-social">
+            <a
+              href="https://www.instagram.com/gabrielemasci_fpv?igsh=ODduNzJzODJsdXNr&utm_source=qr"
+              target="_blank"
+              rel="noopener"
+              title="Instagram"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a
+              href="https://www.youtube.com/@gabrielemasci_fpv"
+              target="_blank"
+              rel="noopener"
+              title="YouTube"
+            >
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+        <hr class="footer-gold-line" />
+        <p class="footer-copyright" data-translate-key="copyright">
+          © 2025 Gabriele Masci. Todos os direitos reservados.
+        </p>
       </div>
-      <p data-translate-key="copyright" style="color: #faf9f6">&copy; 2025 Gabriele Masci</p>
     </footer>
     <script src="script.js"></script>
   </body>
