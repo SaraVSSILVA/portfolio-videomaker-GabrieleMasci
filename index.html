@@ -5,26 +5,26 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css"
       rel="stylesheet"
     />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
-
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title data-translate-key="homeTitle">SEU NOME | Videomaker</title>
+    <title data-translate-key="homeTitle">
+    </title>
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
-    <nav>
-      <button class="hamburger" id="hamburgerBtn" aria-label="Abrir menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <ul id="navbarMenu">
-        <li><a href="#home" data-translate-key="navHome">Home</a></li>
+    <nav class="main-nav">
+      <div class="logo">
+        <a href="#home" data-translate-key="homeTitle">Gabriele Masci</a>
+      </div>
+      <ul>
+        <li>
+          <a href="#home" class="active" data-translate-key="navHome">Home</a>
+        </li>
         <li><a href="#sobre" data-translate-key="navSobre">Sobre</a></li>
         <li>
           <a href="#portfolio" data-translate-key="navPortfolio">Portfólio</a>
@@ -36,142 +36,152 @@
           <a href="contato.html" data-translate-key="navContato">Contato</a>
         </li>
       </ul>
-      <button id="langToggle" style="margin-left: auto">
-        <i class="fas fa-globe"></i> PT/IT
+      <button id="langToggle">
+        <i class="fas fa-globe"></i>
+        <span data-translate-key="langBtn">PT/IT</span>
       </button>
     </nav>
 
-    <section id="home">
-      <h1 data-translate-key="homeTitle">Bem-vindo ao universo de Seu Nome</h1>
-      <p data-translate-key="homeSubtitle">Videomaker e artista visual</p>
-    </section>
-
-    <section id="sobre">
-      <h2 data-translate-key="sobreTitulo">Sobre</h2>
-      <p id="sobreTexto" data-translate-key="sobreTexto">
-        Olá, eu sou o Gabriele, Videomaker e Operador EVS no setor televisivo. Sou
-italiano e passo o meu ano entre o Brasil e a Itália. A minha experiência me permite
-permear diversos ambientes realizando um trabalho de qualidade, desde conteúdos de
-viagens e imóveis (Airbnb, Booking, venda e aluguel), até o setor televisivo de esportes.
-Também sou operador certificado de drones. Produzo conteúdos em vídeo de alta
-qualidade, tanto tradicionais quanto dinâmicos, adaptáveis a diferentes necessidades de
-produção.
-      </p>
-    </section>
-
-    <section id="portfolio">
-      <h2 data-translate-key="portfolioTitulo">Portfólio</h2>
-
-      <div class="video-list" id="videoGaleria">
-        <div class="video-item">
-          <iframe
-            src="https://www.youtube.com/embed/-ssCUXxbYxU"
-            frameborder="0"
-            allowfullscreen
-          ></iframe>
-          <p>
-            Portfólio 1 —
-            <a
-              href="https://youtu.be/-ssCUXxbYxU?si=4czBt1k-FieVTl5-"
-              target="_blank"
-              >Assistir no YouTube</a
-            >
-          </p>
-        </div>
-        <div class="video-item">
-          <iframe
-            src="https://www.youtube.com/embed/OVR1ZHTAIlQ"
-            frameborder="0"
-            allowfullscreen
-          ></iframe>
-          <p>
-            Portfólio 2 —
-            <a
-              href="https://youtu.be/OVR1ZHTAIlQ?si=_qoyjZYVY05b7o45"
-              target="_blank"
-              >Assistir no YouTube</a
-            >
-          </p>
-        </div>
-        <div class="video-item">
-          <iframe
-            src="https://www.youtube.com/embed/DiaXqvyAy-c"
-            frameborder="0"
-            allowfullscreen
-          ></iframe>
-          <p>
-            Portfólio 3 —
-            <a
-              href="https://youtu.be/DiaXqvyAy-c?si=mVGLAU0jhKJZ7jX4"
-              target="_blank"
-              >Assistir no YouTube</a
-            >
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section id="servicos">
-      <h2 data-translate-key="servicosTitulo">Serviços</h2>
-      <div id="servicosLista">
-        <!-- Estrutura para futura implementação de carrinho -->
-        <div class="servico-item" data-id="1">
-          <h3>Edição de Vídeo Profissional</h3>
-          <p>
-            Transforme suas gravações em vídeos incríveis, com cortes, trilha
-            sonora e efeitos visuais.
-          </p>
-          <button class="add-carrinho" disabled title="Em breve">
-            Adicionar ao carrinho
-          </button>
-        </div>
-        <div class="servico-item" data-id="2">
-          <h3>Criação de Vídeos para Redes Sociais</h3>
-          <p>
-            Vídeos otimizados para Instagram, TikTok, YouTube e outras
-            plataformas.
-          </p>
-          <button class="add-carrinho" disabled title="Em breve">
-            Adicionar ao carrinho
-          </button>
-        </div>
-        <div class="servico-item" data-id="3">
-          <h3>Consultoria de Produção Audiovisual</h3>
-          <p>
-            Orientação profissional para projetos audiovisuais, desde roteiro
-            até pós-produção.
-          </p>
-          <button class="add-carrinho" disabled title="Em breve">
-            Adicionar ao carrinho
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <footer>
-      <div class="footer-contato">
-        <a href="mailto:gabrielemasci@hotmail.com" aria-label="E-mail">
-          <i
-            class="fas fa-envelope"
-            style="font-size: 2rem; color: #2DD4BF"
-          ></i>
-        </a>
-        <a
-          href="https://www.instagram.com/gabrielemasci_fpv?igsh=ODduNzJzODJsdXNr&utm_source=qr"
-          target="_blank"
-          aria-label="Instagram"
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1 data-translate-key="homeTitle"></h1>
+        <p data-translate-key="homeSubtitle">
+          A vida em movimento, contada em frames
+        </p>
+        <a href="#portfolio" class="btn-hero" data-translate-key="btnPortfolio"
+          >Ver Portifólio</a
         >
-          <i
-            class="fab fa-instagram"
-            style="font-size: 2rem; color: #2DD4BF"
-          ></i>
-        </a>
       </div>
-      <p data-translate-key="copyright" style="color: #faf9f6">
-        &copy; 2025 Gabriele Masci
-      </p>
-    </footer>
+    </section>
 
-    <script src="script.js"></script>
+    <section id="sobre" class="section-padded">
+      <div class="container sobre-flex">
+        <div class="sobre-img">
+          <img
+            src="assets/img/Sobre.jpg"
+            alt="Gabriele Masci"
+          />
+        </div>
+        <div class="sobre-text">
+          <h2 data-translate-key="sobreTitulo">Sobre Gabriele</h2>
+          <p data-translate-key="sobreTexto">
+            <p>Olá! Sou Gabriele, videomaker e operador EVS com sólida experiência no setor televisivo. Italiano de origem e apaixonado por viagens e esportes, divido meu tempo entre Itália e Brasil, criando conteúdos diversos que refletem essa mistura cultural.
+            <p>Ao longo de mais de 7 anos de carreira, iniciei como videomaker e evoluí para operador EVS, atuando em emissoras de televisão e colaborando com grandes nomes como AC Milan e DAZN.
+            <p>Sou também operador certificado de drones, especializado em FPV. Essa técnica me permite capturar imagens aéreas únicas — desde panorâmicas clássicas até tomadas complexas e precisas, tanto em ambientes internos quanto externos.
+            <p>Produzo vídeos com padrão profissional, incluindo formatos dinâmicos para redes sociais, sempre adaptados às necessidades e estilo de cada cliente.
+            <p class="destaque">Estou pronto para transformar suas ideias em realidade!</p>
+
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="section-padded">
+      <div class="container">
+        <h2 data-translate-key="portfolioTitulo">Portfólio</h2>
+        <div class="portfolio-tabs">
+          <button class="portfolio-tab active" data-tab="esportes">Esportes</button>
+          <button class="portfolio-tab" data-tab="viagens">Viagens</button>
+        </div>
+        <div class="portfolio-content">
+          <div class="portfolio-panel" id="tab-esportes" style="display:block;">
+            <div class="portfolio-grid">
+              <div class="portfolio-card">
+                <iframe width="100%" height="220" src="https://www.youtube.com/embed/HuH5PI8vwdA" title="Juventus x Manchester City - Copa do Mundo de Clubes" frameborder="0" allowfullscreen></iframe>
+                <div class="portfolio-info">
+                  <span class="portfolio-title">Juventus x Manchester City</span>
+                  <span class="portfolio-location">Copa do Mundo de Clubes</span>
+                  <span class="portfolio-contrib">Contribuição: Edição do highlight da partida</span>
+                </div>
+              </div>
+              <div class="portfolio-card">
+                <iframe width="100%" height="220" src="https://www.youtube.com/embed/T0ykoA5dTYU" title="Renovação de contrato Tijjani Reijnders" frameborder="0" allowfullscreen></iframe>
+                <div class="portfolio-info">
+                  <span class="portfolio-title">Renovação de contrato Tijjani Reijnders</span>
+                  <span class="portfolio-location">Milan TV</span>
+                  <span class="portfolio-contrib">Contribuição: Edição do vídeo completo</span>
+                </div>
+              </div>
+              <div class="portfolio-card">
+                <iframe width="100%" height="220" src="https://www.youtube.com/embed/qoZTTSVNgBM" title="Vitória Supercopa contra o Inter" frameborder="0" allowfullscreen></iframe>
+                <div class="portfolio-info">
+                  <span class="portfolio-title">Vitória Supercopa contra o Inter</span>
+                  <span class="portfolio-location">Milan TV</span>
+                  <span class="portfolio-contrib">Contribuição: Edição do vídeo completo</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-panel" id="tab-viagens" style="display:none;">
+            <div class="portfolio-grid">
+              <div class="portfolio-card">
+                <iframe width="100%" height="220" src="https://www.youtube.com/embed/-ssCUXxbYxU" title="PRAIA VERMELHA in FPV 4K PARATY COASTS IN MOTION Drone" frameborder="0" allowfullscreen></iframe>
+                <div class="portfolio-info">
+                  <span class="portfolio-title">Praia Vermelha</span>
+                  <span class="portfolio-location">Paraty - FPV 4K Drone</span>
+                </div>
+              </div>
+              <div class="portfolio-card">
+                <iframe width="100%" height="220" src="https://www.youtube.com/embed/-ssCUXxbYxU" title="JUNDIAÍ in FPV 4K PEDRA DA BALEIA Drone" frameborder="0" allowfullscreen></iframe>
+                <div class="portfolio-info">
+                  <span class="portfolio-title">Jundiaí - Pedra da Baleia</span>
+                  <span class="portfolio-location">FPV 4K Drone</span>
+                </div>
+              </div>
+              <div class="portfolio-card">
+                <iframe width="100%" height="220" src="https://www.youtube.com/embed/OVR1ZHTAIlQ" title="PARATY in FPV 4K HISTORIC CANALS IN MOTION Drone" frameborder="0" allowfullscreen></iframe>
+                <div class="portfolio-info">
+                  <span class="portfolio-title">Paraty - Historic Canals</span>
+                  <span class="portfolio-location">FPV 4K Drone</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicos" class="section-padded">
+      <div class="container">
+        <h2 data-translate-key="servicosTitulo">Serviços</h2>
+        <div class="servicos-grid">
+          <div class="servico-card">
+            <i class="fas fa-video"></i>
+            <h3 data-translate-key="servicoVideoTitulo">Produção de Vídeos</h3>
+            <p data-translate-key="servicoVideoTexto">
+              Conteúdos dinâmicos e tradicionais para marcas, viagens e imóveis.
+            </p>
+          </div>
+          <div class="servico-card">
+            <i class="fas fa-drone"></i>
+            <h3 data-translate-key="servicoDroneTitulo">Operação de Drones</h3>
+            <p data-translate-key="servicoDroneTexto">
+              Imagens aéreas certificadas para projetos inovadores.
+            </p>
+          </div>
+          <div class="servico-card">
+            <i class="fas fa-tv"></i>
+            <h3 data-translate-key="servicoEsporteTitulo">Setor Esportivo</h3>
+            <p data-translate-key="servicoEsporteTexto">
+              Experiência em transmissões e produções televisivas.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="footer-divider"></div>
+    <footer>
+      <div class="container">
+        <p data-translate-key="copyright">
+          © 2025 Gabriele Masci. Todos os direitos reservados.
+        </p>
+        <div class="footer-social">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

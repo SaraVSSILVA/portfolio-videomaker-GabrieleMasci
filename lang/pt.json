@@ -1,29 +1,45 @@
 {
-  "homeTitle": "Bem-vindo ao universo de Stephanie Aveldano",
-  "homeSubtitle": "Videomaker e artista visual",
-  "sobreTitulo": "Sobre",
-  "sobreTexto": "Olá, eu sou o Gabriele, Videomaker e Operador EVS no setor televisivo. Sou
-italiano e passo o meu ano entre o Brasil e a Itália. A minha experiência me permite
-permear diversos ambientes realizando um trabalho de qualidade, desde conteúdos de
-viagens e imóveis (Airbnb, Booking, venda e aluguel), até o setor televisivo de esportes.
-Também sou operador certificado de drones. Produzo conteúdos em vídeo de alta
-qualidade, tanto tradicionais quanto dinâmicos, adaptáveis a diferentes necessidades de
-produção.",
+  "homeTitle": "Gabriele Masci",
+  "homeSubtitle": "A vida em movimento, contada em frames",
+  "btnPortfolio": "Ver Portfólio",
+  "sobreTitulo": "Sobre Gabriele",
+  "sobreTexto": "Olá! Sou Gabriele, videomaker e operador EVS com sólida experiência no setor televisivo. Italiano de origem e apaixonado por viagens e esportes, divido meu tempo entre Itália e Brasil, criando conteúdos diversos que refletem essa mistura cultural.
+Ao longo de mais de 7 anos de carreira, iniciei como videomaker e evoluí para operador EVS, atuando em emissoras de televisão e colaborando com grandes nomes como AC Milan e DAZN.
+Sou também operador certificado de drones, especializado em FPV. Essa técnica me permite capturar imagens aéreas únicas — desde panorâmicas clássicas até tomadas complexas e precisas, tanto em ambientes internos quanto externos.
+Produzo vídeos com padrão profissional, incluindo formatos dinâmicos para redes sociais, sempre adaptados às necessidades e estilo de cada cliente.
+Se você tem uma ideia, estou pronto para transformá-la em imagem. Vamos criar algo incrível juntos!
+",
   "portfolioTitulo": "Portfólio",
-  "vendaTitulo": "Conteúdos à Venda",
-  "contatoTitulo": "Contato",
-  "contatoLinks": {
-    "whatsapp": "WhatsApp",
-    "email": "E-mail",
-    "instagram": "Instagram"
-  },
-  "currency": "BRL",
-  "prices": [800, 950, 1200, 1100, 980],
-  "navbar": {
-    "home": "Home",
-    "sobre": "Sobre",
-    "portfolio": "Portfólio",
-    "venda": "Conteúdos à Venda",
-    "contato": "Contato"
-  }
+  "portfolioCard1": "Vídeo 1",
+  "portfolioCard2": "Vídeo 2",
+  "portfolioCard3": "Vídeo 3",
+  "servicosTitulo": "Serviços",
+  "servicoVideoTitulo": "Produção de Vídeos",
+  "servicoVideoTexto": "Conteúdos dinâmicos e tradicionais para marcas, viagens e imóveis.",
+  "servicoDroneTitulo": "Operação de Drones",
+  "servicoDroneTexto": "Imagens aéreas certificadas para projetos inovadores.",
+  "servicoEsporteTitulo": "Setor Esportivo",
+  "servicoEsporteTexto": "Experiência em transmissões e produções televisivas.",
+  "navHome": "Home",
+  "navSobre": "Sobre",
+  "navPortfolio": "Portfólio",
+  "navServicos": "Serviços",
+  "navContato": "Contato",
+  "langBtn": "PT/IT",
+  "contatoTitulo": "Fale Comigo",
+  "contatoDescricao": "Se você tem um projeto em mente, gostaria de colaborar ou apenas quer trocar uma ideia sobre vídeo e arte, sinta-se à vontade para entrar em contato.",
+  "formTitulo": "Envie-me uma Mensagem",
+  "labelNome": "Nome Completo",
+  "placeholderNome": "Seu nome",
+  "labelEmail": "Seu Email",
+  "placeholderEmail": "seu.email@example.com",
+  "labelAssunto": "Assunto",
+  "placeholderAssunto": "Assunto da mensagem",
+  "labelMensagem": "Mensagem",
+  "placeholderMensagem": "Sua mensagem...",
+  "btnEnviar": "Enviar Mensagem",
+  "contatoInfoTitulo": "Outras Formas de Contato",
+  "infoEmail": "Email:",
+  "infoInstagram": "Instagram:",
+  "copyright": "© 2025 Gabriele Masci. Todos os direitos reservados."
 }

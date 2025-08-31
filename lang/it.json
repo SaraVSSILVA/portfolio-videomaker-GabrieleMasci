@@ -1,30 +1,40 @@
 {
-  "homeTitle": "Benvenuti nell'universo di Stephanie Aveldano",
-  "homeSubtitle": "Videomaker e artista visiva",
-  "sobreTitulo": "Chi Sono",
-  "sobreTexto": " Ciao, sono Gabriele, Videomaker e Operatore EVS nel settore televisivo.
-La mia esperienza mi consente di operare in diversi contesti, dalle cerimonie private come
-matrimoni e battesimi fino al broadcast professionale. Ho avuto l’opportunità di lavorare con
-realtà importanti come Sportitalia (EVS Operator), Milan TV (sia come Videomaker che EVS
-Operator) e DAZN come Video Editor.
-Sono inoltre operatore di droni certificato, in grado di realizzare contenuti video di alta
-qualità, sia tradizionali che dinamici, adattabili a diverse esigenze di produzione.",
+  "homeTitle": "Gabriele Masci",
+  "homeSubtitle": "La vita in movimento, raccontata in frame",
+  "btnPortfolio": "Vedi Portfolio",
+  "sobreTitulo": "Chi è Gabriele",
+  "sobreTexto": "Videomaker, Operatore EVS e artista visivo con esperienza internazionale. Tra Brasile e Italia, creo narrazioni visive che connettono persone, marchi ed emozioni. Specialista in video di viaggio, immobili, sport e produzioni dinamiche, sono anche operatore certificato di droni. Il mio lavoro è trasformare idee in immagini ispiratrici.",
   "portfolioTitulo": "Portfolio",
-  "vendaTitulo": "Contenuti in Vendita",
-  "contatoTitulo": "Contatti",
-  "contatoLinks": {
-    "whatsapp": "WhatsApp",
-    "email": "Email",
-    "instagram": "Instagram"
-  },
-  "currency": "EUR",
-  "prices": [143.86, 170.83, 215.78, 197.24, 175.64],
-  "navbar": {
-  "home": "Home",
-  "sobre": "Chi Sono",
-  "portfolio": "Portfolio",
-  "venda": "Contenuti in Vendita",
-  "contato": "Contatti"
+  "portfolioCard1": "Video 1",
+  "portfolioCard2": "Video 2",
+  "portfolioCard3": "Video 3",
+  "servicosTitulo": "Servizi",
+  "servicoVideoTitulo": "Produzione Video",
+  "servicoVideoTexto": "Contenuti dinamici e tradizionali per marchi, viaggi e immobili.",
+  "servicoDroneTitulo": "Operazione Droni",
+  "servicoDroneTexto": "Immagini aeree certificate per progetti innovativi.",
+  "servicoEsporteTitulo": "Settore Sportivo",
+  "servicoEsporteTexto": "Esperienza in trasmissioni e produzioni televisive.",
+  "navHome": "Home",
+  "navSobre": "Chi sono",
+  "navPortfolio": "Portfolio",
+  "navServicos": "Servizi",
+  "navContato": "Contatti",
+  "langBtn": "IT/PT",
+  "contatoTitulo": "Contattami",
+  "contatoDescricao": "Se hai un progetto in mente, vuoi collaborare o semplicemente scambiare idee su video e arte, sentiti libero di contattarmi.",
+  "formTitulo": "Inviami un Messaggio",
+  "labelNome": "Nome e Cognome",
+  "placeholderNome": "Il tuo nome",
+  "labelEmail": "La tua Email",
+  "placeholderEmail": "la.tua.email@example.com",
+  "labelAssunto": "Oggetto",
+  "placeholderAssunto": "Oggetto del messaggio",
+  "labelMensagem": "Messaggio",
+  "placeholderMensagem": "Il tuo messaggio...",
+  "btnEnviar": "Invia Messaggio",
+  "contatoInfoTitulo": "Altri Contatti",
+  "infoEmail": "Email:",
+  "infoInstagram": "Instagram:",
+  "copyright": "© 2025 Gabriele Masci. Tutti i diritti riservati."
 }
-}
-
