@@ -282,7 +282,6 @@
   outline: 2px solid #e7c27d;
 }
 
-/* btn-hero otimizado abaixo */
 
 .contact-info-wrapper h3 {
   color: #e7c27d;
@@ -530,7 +529,6 @@ body {
   overflow: hidden;
 }
 
-/* Glow turquesa nos cards de serviço */
 .servico-card::before {
   content: '';
   position: absolute;
