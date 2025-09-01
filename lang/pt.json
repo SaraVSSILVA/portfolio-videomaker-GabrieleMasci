@@ -1,9 +1,13 @@
 {
+  "portfolioTabEsportes": "Esportes",
+  "portfolioTabViagens": "Viagens",
   "homeTitle": "Gabriele Masci",
-  "homeSubtitle": "A vida em movimento, contada em frames.",
   "btnPortfolio": "Ver Portfólio",
   "sobreTitulo": "Sobre Gabriele",
-"sobreTexto": "Olá! Sou Gabriele, videomaker e operador EVS com sólida experiência no setor televisivo. Italiano de origem e apaixonado por viagens e esportes, divido meu tempo entre Itália e Brasil, criando conteúdos diversos que refletem essa mistura cultural.\n\nAo longo de mais de 7 anos de carreira, iniciei como videomaker e evoluí para operador EVS, atuando em emissoras de televisão e colaborando com grandes nomes como AC Milan e DAZN.\n\nSou também operador certificado de drones, especializado em FPV. Essa técnica me permite capturar imagens aéreas únicas — desde panorâmicas clássicas até tomadas complexas e precisas, tanto em ambientes internos quanto externos.\n\nProduzo vídeos com padrão profissional, incluindo formatos dinâmicos para redes sociais, sempre adaptados às necessidades e estilo de cada cliente.\n\nEstou pronto para transformar suas ideias em realidade!",
+  "sobreTexto1": "Olá, eu sou o Gabriele, videomaker e operador EVS com experiência no setor televisivo. Sou italiano, apaixonado por viagens e esportes, por isso passo o ano entre a Itália e o Brasil produzindo conteúdos de diversos tipos.",
+  "sobreTexto2": "Tenho mais de 7 anos de experiência profissional, comecei como videomaker para depois me tornar operador EVS, trabalhando na televisão, o que me permitiu atuar em empresas como AC Milan e DAZN.",
+  "sobreTexto3": "Também sou operador certificado de drones, minha habilidade em FPV me permite oferecer soluções visuais aéreas em vários cenários, desde as clássicas imagens panorâmicas até imagens específicas e difíceis de capturar em outros modos, tanto internas quanto externas.",
+  "sobreTexto4": "Produzo vídeos com qualidade profissional, inclusive para redes sociais, de forma dinâmica e sempre adaptada às necessidades de cada cliente.",
   "portfolioTitulo": "Portfólio",
   "portfolioCard1": "Vídeo 1",
   "portfolioCard2": "Vídeo 2",
@@ -11,7 +15,6 @@
   "servicosTitulo": "Serviços",
   "servicoVideoTitulo": "Produção de Vídeos",
   "servicoVideoTexto": "Conteúdos dinâmicos e tradicionais para marcas, viagens e imóveis.",
-
   "servicoEsporteTitulo": "Setor Esportivo",
   "servicoEsporteTexto": "Experiência em transmissões e produções televisivas.",
   "navHome": "Home",

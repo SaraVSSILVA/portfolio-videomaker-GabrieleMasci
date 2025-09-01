@@ -5,7 +5,15 @@ function aplicarTraducoes() {
   document.querySelectorAll('[data-translate-key]').forEach(elem => {
     if (elem.classList.contains('footer-tagline')) return;
     const key = elem.getAttribute('data-translate-key');
-    if (traducoes[key]) {
+    // Se for o parágrafo que contém o destaque
+    if (key === 'sobreTexto4') {
+      const span = elem.querySelector('.destaque');
+      if (span && traducoes[key]) {
+        span.textContent = traducoes[key];
+      }
+    } else if (elem.tagName === 'BUTTON' && traducoes[key]) {
+      elem.textContent = traducoes[key];
+    } else if (traducoes[key]) {
       elem.textContent = traducoes[key];
     }
   });
