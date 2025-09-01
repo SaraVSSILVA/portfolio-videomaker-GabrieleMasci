@@ -40,7 +40,10 @@
         <div class="logo">
           <a href="#home" data-translate-key="homeTitle">Gabriele Masci</a>
         </div>
-        <ul>
+        <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">
+          <span class="hamburger"></span>
+        </button>
+        <ul class="nav-menu">
           <li>
             <a href="#home" class="active" data-translate-key="navHome">Home</a>
           </li>
@@ -54,11 +57,12 @@
           <li>
             <a href="contato.html" data-translate-key="navContato">Contato</a>
           </li>
+          <li>
+            <button id="langToggle" class="langToggle">
+              <span data-translate-key="langBtn">PT/IT</span>
+            </button>
+          </li>
         </ul>
-        <button id="langToggle" class="langToggle">
-          <i class="fas fa-globe"></i>
-          <span data-translate-key="langBtn">PT/IT</span>
-        </button>
       </nav>
 
       <section id="home" class="hero" aria-label="Início">
@@ -114,11 +118,13 @@
               data-translate-key="portfolioTabViagens"
             >
               Viagens
+            <li>
+              <button id="langToggle" class="langToggle">
+                <span class="globe-icon" aria-hidden="true">🌐</span>
+                <span data-translate-key="langBtn">PT/IT</span>
+              </button>
+            </li>
             </button>
-          </div>
-          <div class="portfolio-content">
-            <div
-              class="portfolio-panel"
               id="tab-esportes"
               style="display: block"
             >

@@ -47,6 +47,24 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('scroll', function() {}, { passive: true });
   window.addEventListener('touchstart', function() {}, { passive: true });
   window.addEventListener('touchmove', function() {}, { passive: true });
+
+  // Hamburger menu toggle
+  const navToggle = document.getElementById('navToggle');
+  const navMenu = document.querySelector('.nav-menu');
+  if (navToggle && navMenu) {
+    navToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('open');
+      navToggle.classList.toggle('open');
+    });
+    // Fecha o menu ao clicar em um link
+    navMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('open');
+        navToggle.classList.remove('open');
+      });
+    });
+  }
+
   const langToggleBtn = document.getElementById('langToggle');
   if (langToggleBtn) {
     langToggleBtn.addEventListener('click', () => {

@@ -5,14 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title data-translate-key="navContato">Contato | Gabriele Masci</title>
     <link rel="stylesheet" href="style.css" />
-    <!-- Font Awesome removido: não utilizado no projeto -->
   </head>
   <body>
     <nav class="main-nav">
       <div class="logo">
         <a href="index.html" data-translate-key="homeTitle">Gabriele Masci</a>
       </div>
-      <ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">
+        <span class="hamburger"></span>
+      </button>
+      <ul class="nav-menu">
         <li><a href="index.html" data-translate-key="navHome">Home</a></li>
         <li>
           <a href="index.html#sobre" data-translate-key="navSobre">Sobre</a>
@@ -30,11 +32,12 @@
         <li>
           <a href="contato.html" data-translate-key="navContato">Contato</a>
         </li>
+        <li>
+          <button id="langToggle" class="langToggle">
+            <span data-translate-key="langBtn">PT/IT</span>
+          </button>
+        </li>
       </ul>
-      <button id="langToggle">
-        <i class="fas fa-globe"></i>
-        <span data-translate-key="langBtn">PT/IT</span>
-      </button>
     </nav>
 
     <main>
