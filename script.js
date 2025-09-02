@@ -1,3 +1,47 @@
+document.addEventListener('DOMContentLoaded', function () {
+  var tabEsportes = document.getElementById('tab-esportes');
+  var tabViagens = document.getElementById('tab-viagens');
+  var tabButtons = document.querySelectorAll('.portfolio-tab');
+
+  tabButtons.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      tabButtons.forEach(function (b) { b.classList.remove('active'); });
+      btn.classList.add('active');
+      if (btn.dataset.tab === 'esportes') {
+        tabEsportes.style.display = 'block';
+        tabViagens.style.display = 'none';
+      } else {
+        tabEsportes.style.display = 'none';
+        tabViagens.style.display = 'block';
+      }
+    });
+  });
+});
+document.addEventListener('DOMContentLoaded', function () {
+  document
+    .querySelectorAll('.youtube-facade')
+    .forEach(function (facade) {
+      facade.addEventListener(
+        'click',
+        function (e) {
+          var videoId = facade.getAttribute('data-video');
+          var iframe = document.createElement('iframe');
+          iframe.width = '100%';
+          iframe.height = '220';
+          iframe.src =
+            'https://www.youtube.com/embed/' +
+            videoId +
+            '?autoplay=1';
+          iframe.title = 'YouTube video';
+          iframe.frameBorder = '0';
+          iframe.allowFullscreen = true;
+          iframe.setAttribute('loading', 'lazy');
+          facade.replaceWith(iframe);
+        },
+        { passive: true },
+      );
+    });
+});
 let idiomaAtual = 'it';
 let traducoes = {};
 
@@ -5,7 +49,6 @@ function aplicarTraducoes() {
   document.querySelectorAll('[data-translate-key]').forEach(elem => {
     if (elem.classList.contains('footer-tagline')) return;
     const key = elem.getAttribute('data-translate-key');
-    // Se for o parágrafo que contém o destaque
     if (key === 'sobreTexto4') {
       const span = elem.querySelector('.destaque');
       if (span && traducoes[key]) {
@@ -48,7 +91,6 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('touchstart', function() {}, { passive: true });
   window.addEventListener('touchmove', function() {}, { passive: true });
 
-  // Hamburger menu toggle
   const navToggle = document.getElementById('navToggle');
   const navMenu = document.querySelector('.nav-menu');
   if (navToggle && navMenu) {
@@ -56,7 +98,6 @@ document.addEventListener('DOMContentLoaded', () => {
       navMenu.classList.toggle('open');
       navToggle.classList.toggle('open');
     });
-    // Fecha o menu ao clicar em um link
     navMenu.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
         navMenu.classList.remove('open');
