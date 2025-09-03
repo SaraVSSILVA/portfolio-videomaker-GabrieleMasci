@@ -144,42 +144,47 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   // ------------------ Render Serviços ------------------
   function renderServicos(lang = 'pt') {
-    const servicosGrid = document.getElementById('servicos-grid');
-    if (!servicosGrid) return;
+  const servicosGrid = document.getElementById('servicos-grid');
+  if (!servicosGrid) return;
 
-    servicosGrid.innerHTML = '';
-    const templateSvc = document.getElementById('servico-card-template');
-    if (!templateSvc) return;
+  servicosGrid.innerHTML = '';
+  const templateSvc = document.getElementById('servico-card-template');
+  if (!templateSvc) return;
 
-    servicosData.forEach(item => {
-      const clone = templateSvc.content.cloneNode(true);
+  servicosData.forEach(item => {
+    const clone = templateSvc.content.cloneNode(true);
 
-      const img = clone.querySelector('.servico-img');
-      if (img) img.src = item.image || '';
+    // Imagem
+    const img = clone.querySelector('.servico-img');
+    if (img) img.src = item.image || '';
 
-      const title = clone.querySelector('.portfolio-title');
-      if (title) {
-        title.textContent = (lang === 'it')
-          ? (item.title_it || item.title_pt || '')
-          : (item.title_pt || item.title_it || '');
-      }
+    // Título
+    const title = clone.querySelector('.portfolio-title');
+    if (title) {
+      title.textContent = (lang === 'it')
+        ? (item.title_it || item.title_pt || '')
+        : (item.title_pt || item.title_it || '');
+    }
 
-      const desc = clone.querySelector('.portfolio-contrib');
-      if (desc) {
-        desc.textContent = (lang === 'it')
-          ? (item.description_it || item.description_pt || '')
-          : (item.description_pt || item.description_it || '');
-      }
+    // Descrição
+    const desc = clone.querySelector('.portfolio-contrib');
+    if (desc) {
+      desc.textContent = (lang === 'it')
+        ? (item.description_it || item.description_pt || '')
+        : (item.description_pt || item.description_it || '');
+    }
 
-      servicosGrid.appendChild(clone);
-    });
+    // Botão "Solicitar Orçamento"
+    const btnOrcamento = clone.querySelector('[data-translate-key="btn_solicitar_orcamento-cta"]');
+    if (btnOrcamento && traducoes['btn_solicitar_orcamento-cta']) {
+      btnOrcamento.textContent = traducoes['btn_solicitar_orcamento-cta'];
+    }
 
-     document.querySelectorAll('[data-translate-key]').forEach(elem => {
-    const key = elem.getAttribute('data-translate-key');
-    if (traducoes[key]) elem.textContent = traducoes[key];
-    });
+    // Adiciona o clone já traduzido ao DOM
+    servicosGrid.appendChild(clone);
+  });
+}
 
-  }
 
   // ------------------ Fetch Sanity ------------------
   try {
