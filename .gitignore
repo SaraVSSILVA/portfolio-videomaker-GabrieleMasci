@@ -1,0 +1,32 @@
+# Node.js
+node_modules/
+
+# VSCode
+.vscode/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Arquivos temporários
+*.log
+*.tmp
+
+# Build/output
+/dist/
+/build/
+
+# Sanity Studio (se usado)
+.sanity/
+
+# Arquivos de ambiente
+.env
+.env.local
+.env.*
+
+# Backup/arquivos pessoais
+*.bak
+*.old
+
+# Outros
+.idea/

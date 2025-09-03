@@ -7,9 +7,8 @@
       name="description"
       content="Portfólio de Gabriele Masci, videomaker e operador EVS. Veja trabalhos em esportes, viagens, filmagens com drone e edição profissional. Itália e Brasil."
     />
-    <title data-translate-key="homeTitle">
-      Gabriele Masci
-    </title>
+    <title data-translate-key="homeTitle">Gabriele Masci</title>
+
     <link
       rel="preload"
       href="style.css"
@@ -19,17 +18,21 @@
     <noscript>
       <link rel="stylesheet" href="style.css" />
     </noscript>
-    <script src="script.js" defer></script>
+
+    <script type="module" src="script.js"></script>
   </head>
+
   <body>
     <main id="main-content">
       <nav class="main-nav">
         <div class="logo">
           <a href="#home" data-translate-key="homeTitle">Gabriele Masci</a>
         </div>
+
         <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">
           <span class="hamburger"></span>
         </button>
+
         <ul class="nav-menu">
           <li>
             <a href="#home" class="active" data-translate-key="navHome">Home</a>
@@ -45,7 +48,11 @@
             <a href="contato.html" data-translate-key="navContato">Contato</a>
           </li>
           <li>
-            <button id="langToggle" class="langToggle">
+            <button
+              id="langToggle"
+              class="langToggle"
+              aria-label="Trocar idioma"
+            >
               <span data-translate-key="langBtn">PT/IT</span>
             </button>
           </li>
@@ -54,8 +61,7 @@
 
       <section id="home" class="hero" aria-label="Início">
         <div class="hero-content">
-          <h1 data-translate-key="homeTitle"></h1>
-
+          <h1 data-translate-key="homeTitle">Gabriele Masci</h1>
           <a
             href="#portfolio"
             class="btn-hero"
@@ -69,6 +75,7 @@
         <div class="container sobre-flex">
           <div class="sobre-img">
             <img
+              class="sobre-photo"
               src="/assets/Sobre.webp"
               alt="Gabriele Masci"
               width="260"
@@ -76,14 +83,15 @@
               fetchpriority="high"
             />
           </div>
+
           <div class="sobre-text">
             <h2 data-translate-key="sobreTitulo">Sobre</h2>
-            <p data-translate-key="sobreTexto1"></p>
-            <p data-translate-key="sobreTexto2"></p>
-            <p data-translate-key="sobreTexto3"></p>
-            <p data-translate-key="sobreTexto4">
-              <span class="destaque"></span>
-            </p>
+            <div class="sobre-body">
+              <p data-translate-key="sobreTexto1"></p>
+              <p data-translate-key="sobreTexto2"></p>
+              <p data-translate-key="sobreTexto3"></p>
+              <p data-translate-key="sobreTexto4" class="destaque"></p>
+            </div>
           </div>
         </div>
       </section>
@@ -91,11 +99,18 @@
       <section id="portfolio" class="section-padded" aria-label="Portfólio">
         <div class="container">
           <h2 data-translate-key="portfolioTitulo">Portfólio</h2>
-          <div class="portfolio-tabs">
+
+          <div
+            class="portfolio-tabs"
+            role="tablist"
+            aria-label="Categorias do portfólio"
+          >
             <button
               class="portfolio-tab active"
               data-tab="esportes"
               data-translate-key="portfolioTabEsportes"
+              role="tab"
+              aria-selected="true"
             >
               Esportes
             </button>
@@ -103,363 +118,27 @@
               class="portfolio-tab"
               data-tab="viagens"
               data-translate-key="portfolioTabViagens"
+              role="tab"
+              aria-selected="false"
             >
               Viagens
             </button>
           </div>
-          <div id="tab-esportes" class="portfolio-tab-content" style="display: block;">
-            <div class="portfolio-grid">
-                <div class="portfolio-card">
-                  <div
-                    class="youtube-facade"
-                    data-video="HuH5PI8vwdA"
-                    style="
-                      position: relative;
-                      cursor: pointer;
-                      width: 100%;
-                      height: 220px;
-                      background: #000;
-                    "
-                  >
-                    <img
-                      src="https://img.youtube.com/vi/HuH5PI8vwdA/hqdefault.jpg"
-                      alt="Juventus x Manchester City"
-                      style="
-                        width: 100%;
-                        height: 220px;
-                        object-fit: cover;
-                        filter: brightness(0.7);
-                      "
-                    />
-                    <div
-                      style="
-                        position: absolute;
-                        top: 50%;
-                        left: 50%;
-                        transform: translate(-50%, -50%);
-                      "
-                    >
-                      <svg width="64" height="64" viewBox="0 0 64 64">
-                        <circle
-                          cx="32"
-                          cy="32"
-                          r="32"
-                          fill="#e7c27d"
-                          opacity="0.8"
-                        />
-                        <polygon points="26,20 50,32 26,44" fill="#fff" />
-                      </svg>
-                    </div>
-                  </div>
-                  <div class="portfolio-info">
-                    <span
-                      class="portfolio-title"
-                      data-translate-key="portfolioCard1Title"
-                      >Juventus x Manchester City</span
-                    >
-                    <span
-                      class="portfolio-location"
-                      data-translate-key="portfolioCard1Location"
-                      >Copa do Mundo de Clubes</span
-                    >
-                    <span
-                      class="portfolio-contrib"
-                      data-translate-key="portfolioCard1Contrib"
-                      >Contribuição: Edição do highlight da partida</span
-                    >
-                  </div>
-                </div>
-                <div class="portfolio-card">
-                  <div
-                    class="youtube-facade"
-                    data-video="T0ykoA5dTYU"
-                    style="
-                      position: relative;
-                      cursor: pointer;
-                      width: 100%;
-                      height: 220px;
-                      background: #000;
-                    "
-                  >
-                    <img
-                      src="https://img.youtube.com/vi/T0ykoA5dTYU/hqdefault.jpg"
-                      alt="Renovação de contrato Tijjani Reijnders"
-                      style="
-                        width: 100%;
-                        height: 220px;
-                        object-fit: cover;
-                        filter: brightness(0.7);
-                      "
-                    />
-                    <div
-                      style="
-                        position: absolute;
-                        top: 50%;
-                        left: 50%;
-                        transform: translate(-50%, -50%);
-                      "
-                    >
-                      <svg width="64" height="64" viewBox="0 0 64 64">
-                        <circle
-                          cx="32"
-                          cy="32"
-                          r="32"
-                          fill="#e7c27d"
-                          opacity="0.8"
-                        />
-                        <polygon points="26,20 50,32 26,44" fill="#fff" />
-                      </svg>
-                    </div>
-                  </div>
-                  <div class="portfolio-info">
-                    <span
-                      class="portfolio-title"
-                      data-translate-key="portfolioCard2Title"
-                      >Renovação de contrato Tijjani Reijnders</span
-                    >
-                    <span
-                      class="portfolio-location"
-                      data-translate-key="portfolioCard2Location"
-                      >Milan TV</span
-                    >
-                    <span
-                      class="portfolio-contrib"
-                      data-translate-key="portfolioCard2Contrib"
-                      >Contribuição: Edição do vídeo completo</span
-                    >
-                  </div>
-                </div>
-                <div class="portfolio-card">
-                  <div
-                    class="youtube-facade"
-                    data-video="qoZTTSVNgBM"
-                    style="
-                      position: relative;
-                      cursor: pointer;
-                      width: 100%;
-                      height: 220px;
-                      background: #000;
-                    "
-                  >
-                    <img
-                      src="https://img.youtube.com/vi/qoZTTSVNgBM/hqdefault.jpg"
-                      alt="Vitória Supercopa contra o Inter"
-                      style="
-                        width: 100%;
-                        height: 220px;
-                        object-fit: cover;
-                        filter: brightness(0.7);
-                      "
-                    />
-                    <div
-                      style="
-                        position: absolute;
-                        top: 50%;
-                        left: 50%;
-                        transform: translate(-50%, -50%);
-                      "
-                    >
-                      <svg width="64" height="64" viewBox="0 0 64 64">
-                        <circle
-                          cx="32"
-                          cy="32"
-                          r="32"
-                          fill="#e7c27d"
-                          opacity="0.8"
-                        />
-                        <polygon points="26,20 50,32 26,44" fill="#fff" />
-                      </svg>
-                    </div>
-                  </div>
-                  <div class="portfolio-info">
-                    <span
-                      class="portfolio-title"
-                      data-translate-key="portfolioCard3Title"
-                      >Vitória Supercopa contra o Inter</span
-                    >
-                    <span
-                      class="portfolio-location"
-                      data-translate-key="portfolioCard3Location"
-                      >Milan TV</span
-                    >
-                    <span
-                      class="portfolio-contrib"
-                      data-translate-key="portfolioCard3Contrib"
-                      >Contribuição: Edição do vídeo completo</span
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="portfolio-panel" id="tab-viagens" style="display: none">
-              <div class="portfolio-grid">
-                <div class="portfolio-card">
-                  <div
-                    class="youtube-facade"
-                    data-video="-ssCUXxbYxU"
-                    style="
-                      position: relative;
-                      cursor: pointer;
-                      width: 100%;
-                      height: 220px;
-                      background: #000;
-                    "
-                  >
-                    <img
-                      src="https://img.youtube.com/vi/-ssCUXxbYxU/hqdefault.jpg"
-                      alt="Praia Vermelha"
-                      style="
-                        width: 100%;
-                        height: 220px;
-                        object-fit: cover;
-                        filter: brightness(0.7);
-                      "
-                    />
-                    <div
-                      style="
-                        position: absolute;
-                        top: 50%;
-                        left: 50%;
-                        transform: translate(-50%, -50%);
-                      "
-                    >
-                      <svg width="64" height="64" viewBox="0 0 64 64">
-                        <circle
-                          cx="32"
-                          cy="32"
-                          r="32"
-                          fill="#e7c27d"
-                          opacity="0.8"
-                        />
-                        <polygon points="26,20 50,32 26,44" fill="#fff" />
-                      </svg>
-                    </div>
-                  </div>
-                  <div class="portfolio-info">
-                    <span
-                      class="portfolio-title"
-                      data-translate-key="portfolioCard4Title"
-                      >Praia Vermelha</span
-                    >
-                    <span
-                      class="portfolio-location"
-                      data-translate-key="portfolioCard4Location"
-                      >Paraty - FPV 4K Drone</span
-                    >
-                  </div>
-                </div>
-                <div class="portfolio-card">
-                  <div
-                    class="youtube-facade"
-                    data-video="-DiaXqvyAy-c"
-                    style="
-                      position: relative;
-                      cursor: pointer;
-                      width: 100%;
-                      height: 220px;
-                      background: #000;
-                    "
-                  >
-                    <img
-                      src="https://img.youtube.com/vi/DiaXqvyAy-c/hqdefault.jpg"
-                      alt="Jundiaí - Pedra da Baleia"
-                      style="
-                        width: 100%;
-                        height: 220px;
-                        object-fit: cover;
-                        filter: brightness(0.7);
-                      "
-                    />
-                    <div
-                      style="
-                        position: absolute;
-                        top: 50%;
-                        left: 50%;
-                        transform: translate(-50%, -50%);
-                      "
-                    >
-                      <svg width="64" height="64" viewBox="0 0 64 64">
-                        <circle
-                          cx="32"
-                          cy="32"
-                          r="32"
-                          fill="#e7c27d"
-                          opacity="0.8"
-                        />
-                        <polygon points="26,20 50,32 26,44" fill="#fff" />
-                      </svg>
-                    </div>
-                  </div>
-                  <div class="portfolio-info">
-                    <span
-                      class="portfolio-title"
-                      data-translate-key="portfolioCard5Title"
-                      >Jundiaí - Pedra da Baleia</span
-                    >
-                    <span
-                      class="portfolio-location"
-                      data-translate-key="portfolioCard5Location"
-                      >FPV 4K Drone</span
-                    >
-                  </div>
-                </div>
-                <div class="portfolio-card">
-                  <div
-                    class="youtube-facade"
-                    data-video="OVR1ZHTAIlQ"
-                    style="
-                      position: relative;
-                      cursor: pointer;
-                      width: 100%;
-                      height: 220px;
-                      background: #000;
-                    "
-                  >
-                    <img
-                      src="https://img.youtube.com/vi/OVR1ZHTAIlQ/hqdefault.jpg"
-                      alt="Paraty - Historic Canals"
-                      style="
-                        width: 100%;
-                        height: 220px;
-                        object-fit: cover;
-                        filter: brightness(0.7);
-                      "
-                    />
-                    <div
-                      style="
-                        position: absolute;
-                        top: 50%;
-                        left: 50%;
-                        transform: translate(-50%, -50%);
-                      "
-                    >
-                      <svg width="64" height="64" viewBox="0 0 64 64">
-                        <circle
-                          cx="32"
-                          cy="32"
-                          r="32"
-                          fill="#e7c27d"
-                          opacity="0.8"
-                        />
-                        <polygon points="26,20 50,32 26,44" fill="#fff" />
-                      </svg>
-                    </div>
-                  </div>
-                  <div class="portfolio-info">
-                    <span
-                      class="portfolio-title"
-                      data-translate-key="portfolioCard6Title"
-                      >Paraty - Historic Canals</span
-                    >
-                    <span
-                      class="portfolio-location"
-                      data-translate-key="portfolioCard6Location"
-                      >FPV 4K Drone</span
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
+
+          <div
+            id="tab-esportes"
+            class="portfolio-tab-content"
+            style="display: block"
+          >
+            <div id="portfolio-grid-esportes" class="portfolio-grid"></div>
+          </div>
+
+          <div
+            id="tab-viagens"
+            class="portfolio-tab-content"
+            style="display: none"
+          >
+            <div id="portfolio-grid-viagens" class="portfolio-grid"></div>
           </div>
         </div>
       </section>
@@ -467,119 +146,33 @@
       <section id="servicos" class="section-padded" aria-label="Serviços">
         <div class="container">
           <h2 data-translate-key="servicosTitulo">Serviços</h2>
-          <div class="portfolio-grid">
-            <div class="portfolio-card">
-              <img
-                src="/assets/Filmagens.webp"
-                alt="Filmagens com Câmera"
-                width="348"
-                height="232"
-                loading="lazy"
-                style="width: 100%; height: 180px; object-fit: cover"
-              />
-              <div class="portfolio-info">
-                <span
-                  class="portfolio-title"
-                  data-translate-key="servicoCameraTitulo"
-                  >Filmagens com Câmera</span
-                >
-                <span
-                  class="portfolio-contrib"
-                  data-translate-key="servicoCameraTexto"
-                  >Captura profissional de imagens para eventos, marcas e
-                  projetos especiais.</span
-                >
-                <a
-                  href="contato.html?servico=Filmagens%20com%20C%C3%A2mera"
-                  class="btn-hero"
-                  style="margin-top: 10px; display: inline-block"
-                  target="_blank"
-                  data-translate-key="servicoBtnOrcamento"
-                  >Solicitar Orçamento</a
-                >
-              </div>
-            </div>
-            <div class="portfolio-card">
-              <img
-                src="/assets/drone.avif"
-                alt="Filmagens com Drone"
-                width="348"
-                height="232"
-                loading="lazy"
-                style="width: 100%; height: 180px; object-fit: cover"
-              />
-              <div class="portfolio-info">
-                <span
-                  class="portfolio-title"
-                  data-translate-key="servicoDroneTitulo"
-                  >Filmagens com Drone</span
-                >
-                <span
-                  class="portfolio-contrib"
-                  data-translate-key="servicoDroneTexto"
-                  >Imagens aéreas inovadoras, incluindo FPV, para vídeos únicos
-                  e impactantes.</span
-                >
-                <a
-                  href="contato.html?servico=Filmagens%20com%20Drone"
-                  class="btn-hero"
-                  style="margin-top: 10px; display: inline-block"
-                  target="_blank"
-                  data-translate-key="servicoBtnOrcamento"
-                  >Solicitar Orçamento</a
-                >
-              </div>
-            </div>
-            <div class="portfolio-card">
-              <img
-                src="/assets/Edição.webp"
-                alt="Edição de Vídeos"
-                width="348"
-                height="232"
-                loading="lazy"
-                style="width: 100%; height: 180px; object-fit: cover"
-              />
-              <div class="portfolio-info">
-                <span
-                  class="portfolio-title"
-                  data-translate-key="servicoEdicaoTitulo"
-                  >Edição de Vídeos</span
-                >
-                <span
-                  class="portfolio-contrib"
-                  data-translate-key="servicoEdicaoTexto"
-                  >Montagem, pós-produção e criação de vídeos dinâmicos para
-                  todas as plataformas.</span
-                >
-                <a
-                  href="contato.html?servico=Edi%C3%A7%C3%A3o%20de%20V%C3%ADdeos"
-                  class="btn-hero"
-                  style="margin-top: 10px; display: inline-block"
-                  target="_blank"
-                  data-translate-key="servicoBtnOrcamento"
-                  >Solicitar Orçamento</a
-                >
-              </div>
-            </div>
-          </div>
+          <div id="servicos-grid" class="portfolio-grid"></div>
         </div>
       </section>
 
       <div class="footer-divider"></div>
     </main>
+
     <footer class="site-footer" aria-label="Rodapé">
       <div class="container">
         <div class="footer-main">
           <div class="footer-brand">
             <h2 class="footer-title">Gabriele Masci</h2>
-            <span class="footer-tagline">Immagina, crea e sorprendi.</span>
+            <span
+              class="footer-tagline"
+              data-translate-key="footerTagline"
+            ></span>
+            <span class="footer-tagline" data-translate-key="footerTagline"
+              >Immagina, crea e sorprendi.</span
+            >
           </div>
-          <div class="footer-contact"></div>
+
           <div class="footer-social">
             <a
               href="mailto:gabrielemasci@hotmail.com"
               class="footer-email"
               title="E-mail"
+              aria-label="E-mail"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -596,11 +189,13 @@
                 <polyline points="3 7 12 13 21 7" />
               </svg>
             </a>
+
             <a
-              href="https://www.instagram.com/gabrielemasci_fpv?igsh=ODduNzJzODJsdXNr&utm_source=qr"
+              href="https://www.instagram.com/gabrielemasci_fpv"
               target="_blank"
               rel="noopener"
               title="Instagram"
+              aria-label="Instagram"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -618,11 +213,13 @@
                 <line x1="17.5" y1="6.5" x2="17.5" y2="6.5" />
               </svg>
             </a>
+
             <a
               href="https://www.youtube.com/@gabrielemasci_fpv"
               target="_blank"
               rel="noopener"
               title="YouTube"
+              aria-label="YouTube"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -641,11 +238,67 @@
             </a>
           </div>
         </div>
+
         <hr class="footer-gold-line" />
-        <p class="footer-copyright" data-translate-key="copyright">
-          © 2025 Gabriele Masci. Todos os direitos reservados.
-        </p>
+        <p class="footer-copyright" data-translate-key="copyright"></p>
       </div>
     </footer>
+
+    <template id="portfolio-card-template">
+      <div class="portfolio-card">
+        <div
+          class="youtube-facade"
+          role="button"
+          tabindex="0"
+          aria-label="Abrir vídeo"
+        >
+          <img
+            class="thumb"
+            src=""
+            alt=""
+            loading="lazy"
+            style="
+              width: 100%;
+              height: 220px;
+              object-fit: cover;
+              filter: brightness(0.7);
+            "
+          />
+          <div class="play-overlay" aria-hidden="true">
+            <svg width="64" height="64" viewBox="0 0 64 64" aria-hidden="true">
+              <circle cx="32" cy="32" r="32" fill="#e7c27d" opacity="0.8" />
+              <polygon points="26,20 50,32 26,44" fill="#fff" />
+            </svg>
+          </div>
+        </div>
+        <div class="portfolio-info">
+          <span class="portfolio-title"></span>
+          <p class="portfolio-description"></p>
+          <span class="portfolio-contrib"></span>
+        </div>
+      </div>
+    </template>
+
+    <template id="servico-card-template">
+      <div class="portfolio-card">
+        <img
+          class="servico-img"
+          src=""
+          alt=""
+          loading="lazy"
+          style="width: 100%; height: 180px; object-fit: cover"
+        />
+        <div class="portfolio-info">
+          <span class="portfolio-title"></span>
+          <span class="portfolio-contrib"></span>
+          <a
+            class="btn-hero servico-cta"
+            href="contato.html"
+            style="margin-top: 10px; display: inline-block"
+            >Solicitar Orçamento</a
+          >
+        </div>
+      </div>
+    </template>
   </body>
 </html>
