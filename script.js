@@ -173,6 +173,12 @@ document.addEventListener('DOMContentLoaded', async () => {
 
       servicosGrid.appendChild(clone);
     });
+
+     document.querySelectorAll('[data-translate-key]').forEach(elem => {
+    const key = elem.getAttribute('data-translate-key');
+    if (traducoes[key]) elem.textContent = traducoes[key];
+    });
+
   }
 
   // ------------------ Fetch Sanity ------------------
